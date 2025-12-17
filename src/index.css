@@ -53,7 +53,12 @@ aside {
   border-radius: 8px;
 }
 .numbers {
-  margin-left: 100px;
+  margin-left: 50px;
+  background-color: #f2f4f6;
+  color: #4b5462;
+  border-radius: 10px;
+  width: 50px;
+  text-align: center;
 }
 .aside-options:hover {
   color: #2462eb;

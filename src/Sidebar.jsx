@@ -18,19 +18,22 @@ export default function Sidebar() {
       </div>
       <div className="aside-options">
         <Laptop />
+        Dashboard
       </div>
       <div className="aside-options">
         <Users />
         Users
-        <span className="numbers">100</span>
+        <span className="numbers">116</span>
       </div>
       <div className="aside-options">
         <ChartNoAxesGantt />
         Assignments
+        <span className="numbers">100</span>
       </div>
       <div className="aside-options">
         <Layers />
         Categories
+        <span className="numbers">90</span>
       </div>
       <div className="aside-options logout">
         <LogOut />
