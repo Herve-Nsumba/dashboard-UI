@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primaryColor-50: oklch(0.9517 0.0199 267.29);
+  --color-primaryColor-100: oklch(0.8558 0.0706 267.2);
+  --color-primaryColor-200: oklch(0.7819 0.0956 265.75);
+  --color-primaryColor-300: oklch(0.6842 0.1436 264.73);
+  --color-primaryColor-400: oklch(0.6271 0.1722 263.91);
+  --color-primaryColor-500: oklch(0.5461 0.2152 262.88);
+  --color-primaryColor-600: oklch(0.5104 0.1997 262.97);
+  --color-primaryColor-700: oklch(0.4278 0.1638 262.97);
+  --color-primaryColor-800: oklch(0.3587 0.1329 263.04);
+  --color-primaryColor-900: oklch(0.3035 0.1061 263.11);
+}
+
+body {
+  padding: 15px;
+}
+aside {
+  width: 16rem;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.package {
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: #2462eb;
+  padding: 5px;
+  border-radius: 8px;
+}
+.aside-options {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  color: #364150;
+  font-weight: 600;
+  padding: 7px;
+  border-radius: 8px;
+}
+.numbers {
+  margin-left: 100px;
+}
+.aside-options:hover {
+  color: #2462eb;
+  background-color: #eff6ff;
+  cursor: pointer;
+}
+.logout {
+  margin-top: 205px;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f9f9fb;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    margin-left: 16rem;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  aside {
+    display: none;
+  }
+}
+
+.dashboard-title {
+  display: flex;
+  border: 1px solid #2462eb;
+  padding: 15px;
+  gap: 15px;
+  color: white;
+  background-color: #2462eb;
+  border-radius: 10px;
+  padding-left: 50px;
+}
+
+.dashboard-package {
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: #4f80ed;
+  padding: 5px;
+  border-radius: 8px;
+}
+.green {
+  color: lightgreen;
+  margin-right: 5px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.description > div {
+  display: flex;
+  align-items: center;
+}
